@@ -5,11 +5,11 @@ num = []
 pares = []
 impares = []
 for n in range(0, 7):
-       num.append(int(input('Digite o {}º valor: '.format(n+1))))
-for n, v in enumerate(num):
-       if v % 2 == 0:
+       num.append(int(input('Digite o {}º valor: '.format(n+1)))) # adiciona valores à lista num
+for n, v in enumerate(num): # posição de cada número
+       if v % 2 == 0: # se for par, adiciona à lista pares
               pares.append(v)
-       else:
+       else: # se for ímpar, adiciona à lista impares
               impares.append(v)
 print('Os números digitados foram {}.'.format(num))
 print('Os números pares são {}.'.format((sorted(pares))))

@@ -10,21 +10,22 @@ print('{:^30}'.format('JOGA NA MEGA-SENA'))
 print('-' * 30)
 quant = int(input('Quantos jogos você quer que eu sorteie? '))
 total = 1
-while total <= quant:
-    cont = 0
+while total <= quant: # se menor que 1, pula o laço
+    cont = 0 # contador de números adicionados à lista
+    # sorteando os números
     while True:
         num = randint(1, 60)
         if num not in lista:
-            lista.append((num))
-            cont += 1
+            lista.append((num)) # adiciona número à lista se for um número ainda não adicionado
+            cont += 1 
         if cont >= 6:
             break
-    lista.sort()
-    jogos.append(lista[:])
-    lista.clear()
+    lista.sort() # ordena os números
+    jogos.append(lista[:]) # copia a lista para jogos
+    lista.clear() # limpa a lista
     total += 1
-print('-=' * 3, ' SORTEANDO {} JOGOS '.format(quant), '-=' * 3)
+print('-=' * 3, f' SORTEANDO {quant} JOGOS ', '-=' * 3)
 for i, l in enumerate(jogos):
-    print('Jogo {}: {}'.format(i + 1, l))
+    print(f'Jogo {i+1}: {l}')
     sleep(1)
 print('-=' * 5, ' BOA SORTE!!! ', '-=' * 5)

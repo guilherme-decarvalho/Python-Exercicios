@@ -7,7 +7,7 @@ matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 somapares = coluna3 = maior = 0
 for l in range(0, 3):
     for c in range(0, 3):
-        matriz[l][c] = int(input('Digite um valor para [{}, {}]: '.format(l, c)))
+        matriz[l][c] = int(input(f'Digite um valor para [{l+1}, {c+1}]: '))
 print('-=' * 30)
 for l in range(0, 3):
     for c in range(0, 3):
@@ -16,10 +16,10 @@ for l in range(0, 3):
             somapares += matriz[l][c]
     print()
 print('-=' * 30)
-print('A soma de todos os valores pares digitados é {}.'.format(somapares))
+print(f'A soma de todos os valores pares digitados é {somapares}.')
 for l in range(0, 3):
     coluna3 += matriz[l][2]
-print('A soma dos valores da terceira coluna é {}.'.format(coluna3))
+print(f'A soma dos valores da terceira coluna é {coluna3}.')
 for c in range(0, 3):
     if c == 0:
         maior = matriz[1][c]

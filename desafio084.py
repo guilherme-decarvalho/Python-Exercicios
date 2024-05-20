@@ -5,6 +5,43 @@ a) Quantas pessoas foram cadastradas.
 b) Uma listagem com as pessoas mais pesadas.
 c) Uma listagem com as pessoas mais leves.'''
 
+pessoas = list() # lista que armazenará o nome e o peso das pessoas
+nomepeso = list() # nome e peso
+maior = menor = 0
+
+while True:
+    # armazenando os dados nome e peso
+    nomepeso.append(str(input('Digite o nome: ')))
+    nomepeso.append(float(input('Digite o peso em kg: ')))
+    # definindo o menor e o maior peso
+    if len(pessoas) == 0:
+        maior = menor = nomepeso[1]
+    else:
+        if nomepeso[1] > maior:
+            maior = nomepeso[1]
+        if nomepeso[1] < menor:
+            menor = nomepeso[1]
+    pessoas.append(nomepeso[:]) # armazenando uma cópia de nomepeso em pessoas
+    nomepeso.clear() # limpando a lista nomepeso
+    # perguntando ao usuário se ele quer continuar
+    continua = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+    while continua not in 'SN':
+        continua = (str(input('Não entendi. Quer continuar? [S/N] '))).strip().upper()[0]
+    if continua in 'N':
+        break
+print('-=' * 30)
+print(pessoas)
+print(f'Ao todo, você cadastrou {len(pessoas)} pessoas.')
+print(f'O maior peso foi de {maior}kg. Este é o peso de', end=' ')
+for pessoa in pessoas: # verifica cada pessoa em na lista de pessoas e procura o maior peso
+    if pessoa[1] == maior:
+        print(f'[{pessoa[0]}]', end=' ')
+print(f'\nO menor peso foi de {menor}kg. Este é o peso de', end=' ')
+for pessoa in pessoas: # verifica cada pessoa em na lista de pessoas e procura o menor peso
+    if pessoa[1] == menor:
+        print(f'[{pessoa[0]}]', end=' ')
+
+'''
 pessoas = list()
 nomepeso = list()
 pessoasleves = list()
@@ -54,36 +91,4 @@ print('-=' * 30)
 print('Foram cadasradas {} pessoas.'.format(cont)) #ou format(len(pessoas))
 print('O maior peso foi {}kg. {} pessoa(s) foi(foram) registrada(s) com esse peso: {}.'.format(maior, contmaior, pessoaspesadas))
 print('O menor peso foi {}kg. {} pessoa(s) foi(foram) registrada(s) com esse peso: {}.'.format(menor, contmenor, pessoasleves))
-
-'''
-temp = []
-princ = []
-mai = men = 0
-while True:
-    temp.append(str(input('Nome: ')))
-    temp.append(float(input('Peso)))
-    if len(princ) == 0:
-        mai = men = temp[1]
-    else:
-        if temp[1] > mai:
-            mai = temp[1]
-        if temp[1] < men:
-            men = temp[1]
-    princ.append(temp[:])
-    temp.clear()
-    resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
-    if resp in 'N':
-        break
-print('-=' * 30)
-print('Ao todo, você cadastrou {} pessoas.'.format(len(princ)))
-print('O maior peso foi de {}Kg. Peso de '.format(mai), end='')
-for p in princ:
-    if p[1] == mai:
-        print('{}'.format(p[0]), end= ' ')
-print()
-print('O menor peso foi de {}Kg. Peso de '.format(men), end='')
-for p in princ:
-    if p[1] == men:
-        print('{}'.format(p[0]), end= ' ')
-print()
 '''
