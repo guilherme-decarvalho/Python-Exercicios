@@ -1,9 +1,8 @@
 '''Crie um programa que leia nome, ano de nascimento e carteira de trabalho e cadastre-os
-(com idade) em um dicionário. Se por a caso a CTPS for diferente de ZERO, o dicionário receberá
+(com idade) em um dicionário. Se por acaso a CTPS for diferente de ZERO, o dicionário receberá
 também o ano de contratação e o salário. Calcule e acrescente, além da idade, com quantos anos
 a pessoa vai se aposentar.'''
 from datetime import date
-from time import time
 trab = {}
 trab['Nome'] = input('Nome: ')
 trab['Idade'] = int(input('Ano de nascimento: '))
@@ -14,8 +13,6 @@ if trab['CTPS'] != 0:
     trab['Salário'] = float(input('Salário: R$'))
     trab['Aposentadoria'] = trab['Idade'] + 35 - (date.today().year - trab['Ano de Contratação'])
 print('-=' * 30)
-print(trab)
-print('-=' * 30)
 for k, v in trab.items():
-    print('{}: {}'.format(k, v), end='')
+    print(f'{k}: {v}', end='')
     print()
