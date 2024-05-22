@@ -15,20 +15,21 @@ def contador(i, f, p):
     if p == 0:
         p = 1
     print('-=' * 20)
-    print('Contagem de {} até {} de {} em {}.'.format(i, f, p, p))
+    print(f'Contagem de {i} até {f} de {p} em {p}.')
     sleep(1)
-
+    # ordem crescente
     if i < f:
         cont = i
         while cont <= f:
-            print('{} '.format(cont), end='', flush=True)
+            print(f'{cont} ', end='', flush=True)
             sleep(0.5)
             cont += p
         print('FIM!')
+    # ordem decrescente
     else:
         cont = i
         while cont >= f:
-            print('{} '.format(cont), end='', flush=True)
+            print(f'{cont} ', end='', flush=True)
             sleep(0.5)
             cont -= p
         print('FIM!')
