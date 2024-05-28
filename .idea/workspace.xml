@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c3f0184-cfdf-449d-b628-e9b70b107890" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PythonExercicios.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonExercicios.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0c3f0184-cfdf-449d-b628-e9b70b107890" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +215,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.__init__.executor": "Run",
     "Python.desafio021.executor": "Run",
-    "Python.desafio114.executor": "Debug",
+    "Python.desafio114.executor": "Run",
     "Python.sistema.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "G:/Guilherme/Documents/Cursos/Cursos Curso em Vídeo/Curso Python/PythonExercicios",
