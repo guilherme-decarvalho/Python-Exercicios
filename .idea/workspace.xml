@@ -210,18 +210,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.__init__.executor": "Run",
-    "Python.desafio021.executor": "Run",
-    "Python.desafio114.executor": "Run",
-    "Python.sistema.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "G:/Guilherme/Documents/Cursos/Cursos Curso em Vídeo/Curso Python/PythonExercicios",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.desafio021.executor&quot;: &quot;Run&quot;,
+    &quot;Python.desafio114.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sistema.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Guilherme/Documents/Cursos/Cursos Curso em Vídeo/Curso Python/PythonExercicios&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Guilherme\PycharmProjects\PythonExercicios" />
@@ -403,13 +403,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.ex001" />
-      <item itemvalue="Python.ex002" />
-      <item itemvalue="Python.desafio114" />
       <item itemvalue="Python.desafio021" />
-      <item itemvalue="Python.sistema" />
       <item itemvalue="Python.desafio097" />
       <item itemvalue="Python.desafio098" />
+      <item itemvalue="Python.desafio114" />
+      <item itemvalue="Python.ex001" />
+      <item itemvalue="Python.ex002" />
+      <item itemvalue="Python.sistema" />
     </list>
     <recent_temporary>
       <list>
